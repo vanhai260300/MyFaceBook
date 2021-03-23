@@ -1,0 +1,20 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 5, 2020, 11:32:43 PM
+    Author     : LENOVO
+*/
+body{
+    margin: 0;
+}
+div.head{
+    text-indent: 10pt;
+}
+div.main{
+    text-indent: 10pt;
+    color: olivedrab;
+}
+

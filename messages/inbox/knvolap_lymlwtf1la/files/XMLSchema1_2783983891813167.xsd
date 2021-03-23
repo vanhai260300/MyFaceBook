@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://tempuri.org/XMLSchema.xsd"
+    elementFormDefault="qualified"
+    xmlns="http://tempuri.org/XMLSchema.xsd"
+    xmlns:mstns="http://tempuri.org/XMLSchema.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+  <xs:element name="address-book">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="entry">
+          <xs:complexType>
+            <xs:sequence>
+              
+              <xs:element name="name">
+                <xs:complexType mixed="true">
+                  <xs:sequence minOccurs="0" maxOccurs="unbounded">
+                    <xs:element name="fname" type="xs:string"/>
+                    <xs:element name="lname" type="xs:string"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+
+              <xs:element name="address">
+                <xs:complexType>
+                  <xs:sequence>
+                    
+                    <xs:element name="street" type="xs:string"/>
+                    
+                    <xs:element name="region">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:pattern value="[A-Z][A-Z]"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    
+                    <xs:element name="postal-code">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:integer">
+                          <xs:pattern value="[0-9]{5}"/>
+                        </xs:restriction>    
+                      </xs:simpleType>
+                    </xs:element>
+
+                    <xs:element name="locality" type="xs:string"/>
+                    <xs:element name="country" type="xs:string"/>
+                    
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+
+              <xs:element name="tel" >
+                <xs:complexType>
+                  <xs:attribute name="preferred" use="required">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:pattern value="true|false"/>
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:attribute>
+                </xs:complexType>
+              </xs:element>
+
+              <xs:element name="email">
+                <xs:complexType>
+                  <xs:attribute name="href">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:pattern value=""/>
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:attribute>
+                </xs:complexType>
+              </xs:element>
+              
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<data-set xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <record>
+    <LastName>Smith</LastName>
+    <Sales>16753</Sales>
+    <Country>UK</Country>
+    <Quarter>Qtr 3</Quarter>
+  </record>
+  <record>
+    <LastName>Johnson</LastName>
+    <Sales>14800</Sales>
+    <Country>USA</Country>
+    <Quarter>Qtr 4</Quarter>
+  </record>
+</data-set>

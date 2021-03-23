@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE address-book SYSTEM "C:\Users\My PC\Documents\Visual Studio 2017\Projects\address-book.dtd">
+<address-book>
+  <entry>
+    <name>Jhon Doe</name>
+    <address>
+      <street>34 Fountain Square Plaza</street>
+      <region>OH</region>
+      <postal-code>45202</postal-code>
+      <locality>Cincinnati</locality>
+      <country>US</country>
+    </address>
+    <tel preferred="true">513-555-8889</tel>
+    <tel>513-555-7098</tel>
+    <email href="mailto:jdoe@gmailaholic.com"/>
+  </entry>
+  <entry>
+    <name>
+      <fname>Jack</fname>
+      <lname>Smith</lname>
+    </name>
+    <tel>513-555-3465</tel>
+    <email href="mailto:jsmith@gmailaholic.com"/>
+  </entry>
+</address-book>

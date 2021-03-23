@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <style>
+            #container-form1{
+                border: 2px solid lightblue;
+                width: 450px;
+                background-color: lightblue;
+                margin: 0 auto;
+            }
+            .label1 {
+                width: 200px;
+                display: block;
+                float: left;
+            }
+            .input-row {
+                margin-top: 10px;
+            }
+            h1 {
+                color: blue;
+            }
+            button {
+                overflow: float;
+                display: block;
+                margin: 0 auto;
+                margin-top: 20px;
+                color: white;
+                background-color: tomato;
+            }
+            .title {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <?php
+        // put your code here
+        ?>
+        <div id="wrapper">
+            <div id="container-form1">
+                <form action="xulysothanhchu.php" method="post">
+                    <h1 class="title"> Đọc số nguyên ba chữ số</h1> 
+                    <div class="input-row">
+                        <label class="label1">Nhập số nguyên ba chữ số: </label>
+                        <input type="text" name="n" /> <br>
+                    </div>
+                    <button type="submit">Đọc</button>
+
+
+                </form>
+
+            </div>
+        </div>
+
+    </body>
+</html>
